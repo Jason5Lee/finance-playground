@@ -2,7 +2,7 @@ namespace Jason5Lee.FinancePlayground.MvOpt;
 
 using MathNet.Numerics.LinearAlgebra;
 
-internal class Utils {
+internal static class Utils {
     public static double CalculateExpectedReturn(Vector<double> weights, Vector<double> returns, double riskFreeRate) {
         return weights.DotProduct(returns) + riskFreeRate;
     }
